@@ -1,9 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bel canto breathing thing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Noto+Music&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style_final.css" />
 </head>
 <body>
-    Hello World
+
+  <div class="stars"></div>
+
+  <p class="subtitle">my bel canto breathing journey • hover the notes</p>
+
+  <main class="scene">
+    <svg class="anatomy" viewBox="0 0 1000 800">
+
+      <defs>
+        <filter id="softWobbleGlow" x="-35%" y="-35%" width="170%" height="170%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="7" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G" result="wobble" />
+          <feGaussianBlur in="wobble" stdDeviation="14" result="blurred" />
+        </filter>
+      </defs>
+
+      <g class="lungGroup">
+        <ellipse class="lung-glow" cx="390" cy="460" rx="180" ry="300" filter="url(#softWobbleGlow)" />
+        <ellipse class="lung-glow" cx="610" cy="460" rx="180" ry="300" filter="url(#softWobbleGlow)" />
+
+        <path class="lung-shape" d="M420 120 C350 124 286 172 248 254 C212 332 200 428 205 528 C210 640 246 736 306 796 C352 842 408 854 460 828 C510 802 544 738 553 656 C562 574 550 498 530 422 C512 354 507 282 516 220 C524 162 486 118 420 120 Z" />
+        <path class="lung-shape" d="M580 120 C650 124 714 172 752 254 C788 332 800 428 795 528 C790 640 754 736 694 796 C648 842 592 854 540 828 C490 802 456 738 447 656 C438 574 450 498 470 422 C488 354 493 282 484 220 C476 162 514 118 580 120 Z" />
+      </g>
+    </svg>
+
+    <div class="story-panel left-panel">
+      <div class="story-scroll">
+        <h2>finding support</h2>
+        <p>I thought I had support before. I did not.</p>
+        <p>I was singing every day with tension I couldn't even feel. Guessing my way through everything.</p>
+        <p>Then I plateaued and got frustrated for real.</p>
+        <p>Started straw drills and Farinelli breathing daily. Moved from chest breathing to lower breathing, but still leaking air everywhere.</p>
+        <p>One day I found rib support and everything felt different.</p>
+        <p>Got sore and stiff after. Scary at first, but normal.</p>
+        <p>Appoggio is not push harder. It's control and holding back air. Like a balloon letting out air slowly, not exploding.</p>
+        <p>That's when my notes felt less forced and more stable.</p>
+        <p>I had anger and extreme happiness at the same time. Finally felt like I reached the point I wanted.</p>
+      </div>
+    </div>
+
+    <div class="story-panel right-panel">
+      <div class="story-scroll">
+        <h2>breakdown to automation</h2>
+        <p>Then I had to stop full songs. That hurt me emotionally.</p>
+        <p>Early to late Dec was drills only. Mostly straw and stability checks. I used code to check if breath was steady enough.</p>
+        <p>January was the boring stage. I knew the steps, but my body still couldn't do it automatic.</p>
+        <p>Mid to late January I cracked one night after training. It felt like losing part of my identity for a bit.</p>
+        <p>I went numb for about a week. Then got neutral and kept going.</p>
+        <p>Late Jan to early Feb support started showing up easier. Oo and oh are stable now. Ahh still needs work.</p>
+        <p>I can lip trill melodies now because support is more automated.</p>
+        <p>I still don't rush songs. I wanna protect this progress.</p>
+        <p>Less dopamine sessions, more consistency. That was the breakthrough.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="note tip-right" style="left:7vw; top:18vh; font-size:3.1rem; color:#ffb5e0;">♪<div class="tip"><span class="when">Nov 2025</span>Thought I had support. Still singing with tension.</div></div>
+  <div class="note tip-right" style="left:9vw; top:33vh; font-size:2.8rem; color:#d4b8ff;">♫<div class="tip"><span class="when">Nov 2025</span>Hit plateau. Switched to breath drills.</div></div>
+  <div class="note tip-right" style="left:6.5vw; top:49vh; font-size:3.4rem;">♩<div class="tip"><span class="when">Dec 2025</span>Found rib support. Got sore after.</div></div>
+  <div class="note tip-right" style="left:10vw; top:65vh; font-size:3rem; color:#d4b8ff;">♬<div class="tip"><span class="when">Dec 2025</span>Learned control beats pushing.</div></div>
+  <div class="note tip-right" style="left:8vw; top:79vh; font-size:3.2rem; color:#ffb5e0;">♭<div class="tip"><span class="when">Dec 2025</span>Anger + relief at the same time.</div></div>
+
+  <div class="note tip-left" style="left:88vw; top:22vh; font-size:3.4rem; color:#d4b8ff;">♫<div class="tip"><span class="when">Dec 2025</span>Stopped full songs to protect progress.</div></div>
+  <div class="note tip-left" style="left:85vw; top:39vh; font-size:3rem; color:#ffb5e0;">♯<div class="tip"><span class="when">Late Dec 2025</span>Used code to track breath stability.</div></div>
+  <div class="note tip-left" style="left:90vw; top:52vh; font-size:3.5rem; color:#d4b8ff;">♪<div class="tip"><span class="when">Jan 2026</span>Knew steps but automation wasn't there.</div></div>
+  <div class="note tip-left" style="left:86vw; top:67vh; font-size:3.2rem;">♬<div class="tip"><span class="when">Mid Jan 2026</span>Emotional breakdown after training.</div></div>
+  <div class="note tip-left" style="left:89vw; top:81vh; font-size:3.2rem; color:#d4b8ff;">𝄞<div class="tip"><span class="when">Late Jan 2026</span>Neutral mindset = technical jump.</div></div>
+
+  <div class="note tip-down" style="left:38vw; top:90vh; font-size:3rem; color:#ffb5e0;">♩<div class="tip"><span class="when">Early Feb 2026</span>Sessions less dramatic, more consistent.</div></div>
+  <div class="note tip-up"   style="left:51vw; top:92vh; font-size:3.6rem; color:#d4b8ff;">♪<div class="tip"><span class="when">Feb 2026</span>Oo stable, oh stable, ahh building.</div></div>
+  <div class="note tip-up"   style="left:62vw; top:90vh; font-size:3.2rem; color:#ffb5e0;">♫<div class="tip"><span class="when">Now</span>Lip trills easier from automation.</div></div>
+  <div class="note tip-down" style="left:48vw; top:7vh; font-size:2.75rem; color:#d4b8ff;">♭<div class="tip"><span class="when">Now</span>Speaking voice changed too.</div></div>
+
+  <div class="asteroid">♩</div>
+  <div class="asteroid">♪</div>
+  <div class="asteroid">♫</div>
+  <div class="asteroid">♬</div>
+  <div class="asteroid">♭</div>
+  <div class="asteroid">♯</div>
+  <div class="asteroid">𝄞</div>
+  <div class="asteroid">♩</div>
+  <div class="asteroid">♪</div>
+  <div class="asteroid">♫</div>
+  <div class="asteroid">♬</div>
+  <div class="asteroid">𝄞</div>
+
+  <section class="mobile-timeline">
+    <h2>Timeline</h2>
+    <ul>
+      <li><strong>Nov–Dec 2025:</strong> tension, plateau, then real support</li>
+      <li><strong>Dec 2025:</strong> paused songs, focused on drills</li>
+      <li><strong>Jan 2026:</strong> automation stage, emotional crash</li>
+      <li><strong>Late Jan–Now:</strong> support became automatic</li>
+    </ul>
+  </section>
+
+  <script>
+  (function () {
+    var tipNotes = Array.from(document.querySelectorAll('.note'));
+    var ast = Array.from(document.querySelectorAll('.asteroid'));
+
+    ast.forEach(function (el) {
+      var sz = 0.75 + Math.random() * 0.9;
+      el.style.fontSize = sz.toFixed(2) + 'rem';
+      el.style.opacity = (0.25 + Math.random() * 0.35).toFixed(2);
+
+      var cols = [
+        'rgba(255,181,224,0.38)',
+        'rgba(212,184,255,0.40)',
+        'rgba(255,220,240,0.30)',
+        'rgba(210,170,255,0.28)',
+        'rgba(212,184,255,0.32)'
+      ];
+      el.style.color = cols[Math.floor(Math.random() * cols.length)];
+    });
+
+    tipNotes.forEach(function (n) {
+      var dir = ['tip-up','tip-down','tip-left','tip-right'].find(function (c) {
+        return n.classList.contains(c);
+      });
+      n.dataset.baseTip = dir || 'tip-up';
+    });
+
+    var hovered = null;
+    var lastHovered = null;
+
+    function setHovered(el) {
+      if (lastHovered && !el) {
+        resetTipDir(lastHovered);
+      }
+      hovered = el;
+      lastHovered = el;
+      if (el) checkTipPosition(el);
+    }
+
+    tipNotes.forEach(function (n) {
+      n.addEventListener('mouseenter', function () { setHovered(n); });
+      n.addEventListener('mouseleave', function () { setHovered(null); });
+    });
+
+    function setTipDir(el, dir) {
+      el.classList.remove('tip-up','tip-down','tip-left','tip-right');
+      el.classList.add(dir);
+    }
+
+    function resetTipDir(el) {
+      setTipDir(el, el.dataset.baseTip || 'tip-up');
+    }
+
+    function checkTipPosition(noteEl) {
+      var tip = noteEl.querySelector('.tip');
+      if (!tip) return;
+
+      resetTipDir(noteEl);
+
+      requestAnimationFrame(function () {
+        var r = tip.getBoundingClientRect();
+        var pad = 10;
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+
+        if (r.top < pad)             setTipDir(noteEl, 'tip-down');
+        else if (r.bottom > h - pad) setTipDir(noteEl, 'tip-up');
+        else if (r.left < pad)       setTipDir(noteEl, 'tip-right');
+        else if (r.right > w - pad)  setTipDir(noteEl, 'tip-left');
+      });
+    }
+
+    function makeBodies(els, getBounds, speedMin, speedMax, spinMax) {
+      return els.map(function (el) {
+        el.style.animation = 'none';
+
+        var rect = el.getBoundingClientRect();
+        var x = rect.left + rect.width / 2;
+        var y = rect.top  + rect.height / 2;
+
+        var b = getBounds();
+
+        if (!isFinite(x) || !isFinite(y) || (x === 0 && y === 0) || el.classList.contains('asteroid')) {
+          x = b.l + Math.random() * (b.r - b.l);
+          y = b.t + Math.random() * (b.b - b.t);
+        }
+
+        var speed = speedMin + Math.random() * (speedMax - speedMin);
+        var ang   = Math.random() * Math.PI * 2;
+
+        return {
+          el: el,
+          x: x, y: y,
+          vx: Math.cos(ang) * speed,
+          vy: Math.sin(ang) * speed,
+          rot: Math.random() * 360,
+          spin: (Math.random() * spinMax * 2 - spinMax)
+        };
+      });
+    }
+
+    function bounceOff(body, b) {
+      if (body.x < b.l) { body.x = b.l; body.vx *= -1; }
+      if (body.x > b.r) { body.x = b.r; body.vx *= -1; }
+      if (body.y < b.t) { body.y = b.t; body.vy *= -1; }
+      if (body.y > b.b) { body.y = b.b; body.vy *= -1; }
+    }
+
+    var lungBounds   = { l: 0, r: 0, t: 0, b: 0 };
+    var screenBounds = { l: 0, r: 0, t: 0, b: 0 };
+
+    function updateBounds() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      lungBounds   = { l: w * 0.18, r: w * 0.82, t: h * 0.12, b: h * 0.88 };
+      screenBounds = { l: 24, r: w - 24, t: 24, b: h - 24 };
+    }
+
+    updateBounds();
+    window.addEventListener('resize', updateBounds);
+
+    var astBodies  = makeBodies(ast,      function () { return lungBounds; },   45, 120, 35);
+    var noteBodies = makeBodies(tipNotes, function () { return screenBounds; }, 10,  28, 10);
+
+    var last = performance.now();
+
+    function loop(now) {
+      var dt = (now - last) / 1000;
+      if (dt > 0.03) dt = 0.03;
+      last = now;
+
+      astBodies.forEach(function (b) {
+        b.x   += b.vx * dt;
+        b.y   += b.vy * dt;
+        b.rot += b.spin * dt;
+
+        bounceOff(b, lungBounds);
+
+        b.el.style.left      = b.x + 'px';
+        b.el.style.top       = b.y + 'px';
+        b.el.style.transform = 'translate(-50%, -50%) rotate(' + b.rot.toFixed(1) + 'deg)';
+      });
+
+      noteBodies.forEach(function (b) {
+        if (hovered && b.el === hovered) {
+          b.el.style.left = b.x + 'px';
+          b.el.style.top  = b.y + 'px';
+          return;
+        }
+
+        b.x += b.vx * dt;
+        b.y += b.vy * dt;
+
+        bounceOff(b, screenBounds);
+
+        b.el.style.left = b.x + 'px';
+        b.el.style.top  = b.y + 'px';
+      });
+
+      requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+  })();
+  </script>
+
 </body>
 </html>
+
